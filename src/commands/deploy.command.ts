@@ -9,7 +9,7 @@ import micromatch from "micromatch";
 import { createHash } from "crypto";
 import process from "process";
 
-import { ReleaseStrategy, Config } from "node-stage";
+import { ReleaseStrategy, Config } from "@whatskit/node-stage";
 import {
   logWarning,
   logError,
@@ -18,17 +18,15 @@ import {
   logBanner,
   getToolEnvironment,
   confirm,
-} from "node-stage/cli";
-import { getGitChanges } from "node-stage/git";
+} from "@whatskit/node-stage/cli";
+import { getGitChanges } from "@whatskit/node-stage/git";
 import {
   Option,
   getYargsOptions,
   loadYargsConfig,
   YargsOptions,
-} from "node-stage/yargs";
-import {
-  loadColors
-} from "node-stage/chalk";
+} from "@whatskit/node-stage/yargs";
+import { loadColors } from "@whatskit/node-stage/chalk";
 
 import {
   executeCloudfrontInvalidation,
@@ -277,9 +275,9 @@ export const command: yargs.CommandModule = {
 
     // sort deploy
     plan.items.sort((a, b) => {
-      // > 0	 sort b before a
-      // < 0	 sort a before b
-      // === 0	 keep original order of a and b
+      // > 0   sort b before a
+      // < 0   sort a before b
+      // === 0   keep original order of a and b
 
       // sort by action
       if (sortAction[a.action!] > sortAction[b.action!]) return 1;

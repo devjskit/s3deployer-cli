@@ -1,6 +1,6 @@
 {
   "name": "@whatskit/s3deployer-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/whatskit/s3deployer-cli",
   "bugs": "https://github.com/whatskit/s3deployer-cli/issues",
   "repository": "git@github.com:whatskit/s3deployer-cli",
@@ -27,7 +27,7 @@
     "@aws-sdk/credential-provider-env": "^3.110.0",
     "@aws-sdk/credential-provider-ini": "^3.112.0",
     "@aws-sdk/node-config-provider": "^3.110.0",
-    "node-stage": "poviolabs/node-stage#v2",
+    "@whatskit/node-stage": "^0.1.0",
     "chalk": "^4.1.2",
     "fast-glob": "^3.2.11",
     "micromatch": "^4.0.5",
