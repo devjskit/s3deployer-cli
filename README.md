@@ -132,4 +132,8 @@ yarn build
 
 # test build
 yarn test --help
+
+## Thinks
+
+https://github.com/poviolabs/spa-deploy-cli
 ```
